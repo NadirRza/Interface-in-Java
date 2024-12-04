@@ -1,6 +1,7 @@
-package Task1;
+package Task6;
 
 public interface Playable {
-    void play();
-    void stop();
+    default void defaultPlayMessage(){
+        System.out.println("Playing media");
+    }
 }

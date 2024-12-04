@@ -1,13 +1,8 @@
-package Task1;
+package Task6;
 
-public class MusicPlayer implements Playable{
-    @Override
-    public void play() {
-        System.out.println("Music play");
-    }
-
-    @Override
-    public void stop() {
-        System.out.println("Music stop");
+public class MusicPlayer implements Playable {
+    public static void main(String[] args) {
+        MusicPlayer musicPlayer = new MusicPlayer();
+        musicPlayer.defaultPlayMessage();
     }
 }

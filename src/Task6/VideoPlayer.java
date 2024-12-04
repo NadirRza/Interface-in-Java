@@ -1,14 +1,14 @@
-package Task1;
+package Task6;
 
-public class VideoPlayer implements Playable{
+public class VideoPlayer implements Playable {
+
     @Override
-    public void play() {
-        System.out.println("Video play");
+    public void defaultPlayMessage() {
+        System.out.println("Playing video");
     }
 
-    @Override
-    public void stop() {
-        System.out.println("Video stop");
-
+    public static void main(String[] args) {
+        VideoPlayer videoPlayer = new VideoPlayer();
+        videoPlayer.defaultPlayMessage();
     }
 }
